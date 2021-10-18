@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+    <div>
+        <form action="survey" method="post">
+            <p> Let us know how we can improve freeCodeCam </p>
+            <table>
+                <colgroup> 
+                    <col width = 450px span="2">
+                    
+                </colgroup>
+                <tr>
+                    <td class="align-right">*Name: </td>
+                    <td><input type="text" name="name" class="info" placeholder="Enter you name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-right">*Email: </td>
+                    <td><input type="email" name="email" class="info" placeholder="Enter your Email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-right">*Age: </td>
+                    <td><input type="number" name="age"class="info" placeholder="Age" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-right">Quick option best describes your current role: </td>
+                    <td> <select name="role" id="role" required>
+                            <option value="student">Student</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="Other">Other</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-right" style="vertical-align: top"> How likely is that
+                        you would recommend <br>freeCodeCam to a friend?
+                    </td>
+                    <td class="line-height"><input type="radio" name="choose" value="def" required>
+                        <label for="def">Definitely</label><br>
+                    <input type="radio" name="choose" value="may" required>
+                        <label for="may">Maybe</label><br>
+                    <input type="radio" name="choose" value="not" required>
+                        <label for="not">Not sure</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-right">What do you like most in FCC: </td>
+                    <td> <select name="likemost" id="like" required>
+                            <option value="select">Select an option</option>
+                            <option value="Other">Other</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-right" style="vertical-align: top;">Things that should be improved in the future <br>(Check all that apply)</td>
+                    <td class="line-height">
+                        <input type="checkbox" name="check" value="1">
+                        Font-end Projects <br>
+                        <input type="checkbox" name="check" value="2">
+                        Back-end Projects <br>
+                        <input type="checkbox" name="check" value="3">
+                        Data visualization<br>
+                        <input type="checkbox" name="check" value="4">
+                        Challengers<br>
+                        <input type="checkbox" name="check" value="5">
+                        Open Source Cmmunity <br>
+                        <input type="checkbox" name="check" value="6">
+                        Gitter help roams <br>
+                        <input type="checkbox" name="check" value="7">
+                        Videos <br>
+                        <input type="checkbox" name="check" value="8">
+                        City meetups <br>
+                        <input type="checkbox" name="check" value="9">
+                        Wiki <br>
+                        <input type="checkbox" name="check" value="10">
+                        Forum <br>
+                        <input type="checkbox" name="check" value="11">
+                        Additional Courses
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-right" style="vertical-align: top;">Any comments or Suggestion?</td>
+                    <td><input type="text" name="comments" id="comment" placeholder="Enter your comment here..."></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button>Submit</button>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

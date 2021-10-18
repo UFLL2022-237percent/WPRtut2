@@ -1,0 +1,153 @@
+header {
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('header.jpg');
+    background-repeat: no-repeat;
+    height: 700px;
+    max-width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    color: white;
+}
+
+body {
+    font-family: 'Lora', sans-serif;
+}
+.container {
+    max-width: 1140px ;
+    margin: auto;
+}
+nav {
+    padding: 20px;
+    position: relative;
+    font-size: 40px; 
+}
+header ul{
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    right:0;
+    transform: translateY(-50%);
+    
+}
+header ul li {
+    display:inline;
+    list-style-type: none;
+    margin-left: 15px;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+}
+ul li:nth-child(5) {
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+    background: none;
+    font-family: 'Lora', sans-serif;
+}
+ul li:nth-child(5):hover a {
+    color: black;
+    transition: 0.3s;}
+
+ul li:nth-child(5):hover {
+    background-color: white;
+    transition: 0.3s;}  
+ 
+.title{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.title p:nth-child(1){
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+.title p:nth-child(2) {
+    font-size: 65px;
+    letter-spacing: 5px;
+}
+.learn-more {
+    display: flex;
+    justify-content: center;
+
+}
+button {
+    margin: 20px;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 40px;
+    background: rgb(54, 179, 168);
+    border: none;
+    color: white;
+    font-family: 'Lora', sans-serif;
+}
+button:hover {
+    background: rgb(54, 179, 168,0.6);
+    cursor: pointer;
+}
+.content{
+    margin-top: 100px;
+    font-family:'Open Sans', sans-serif;
+    text-align: center;
+}
+#img-title {
+    margin-bottom: 36px;
+    font-size: 28px;
+    font-weight: bold;
+}
+#img-title-cont {
+    margin: auto;
+    width: 40%;
+    line-height: 36px;
+    color: grey;
+    
+}
+.album {
+    margin-top: 125px;
+    overflow:hidden;
+}
+    
+.album-item:first-child {
+    max-width: calc(100%/2);
+    float: left;
+}
+.album-item {
+    max-width: calc(100%/2);
+    float: right;
+}
+img {
+    max-width: 70%;   
+}
+.album-item h1 {
+    color: rgb(61, 153, 145);
+    margin-top: 24px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.album-item p {
+    margin: auto;
+    width: 70%;
+    margin-top: 24px;
+    line-height: 36px; 
+}
+.end {
+    color: white;
+    margin-top: 100px;
+    background-color: black;
+    padding: 75px;
+}
+.end p:nth-child(1) {
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.end p:nth-child(2) {
+    font-size: 15px;
+    color: grey;
+}
+
