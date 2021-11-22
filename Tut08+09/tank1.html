@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button {
+        width: 50px;
+        margin-top: 10px;
+    }
+    #up, #down {
+        margin-left: 60px;
+    }
+    #left {
+        margin-left: 10px;
+    }
+    #right {
+        margin-left: 46px;
+    }
+    body {
+  position: relative;
+}
+
+img {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+}
+</style>
+<body>
+    
+    <body style="position: relative;">  
+
+        <img style=" position: absolute; left: 20px; top: 20px; height: 19px; width: 19px;" onclick="A()" id='inspo' src="tank.png">
+    
+        <button id="left" onclick="moveleft()">left</button>
+        <button class="right" onclick="moveright()">right</button>
+        <button class="down" onclick="movedown()">down</button>
+        <button class="up" onclick="moveup()">up</button>
+    
+    <script type="text/javascript">
+    
+    function moveleft() {
+      const img = document.getElementById('inspo');
+      img.style.left = Number(img.style.left.slice(0, -2)) - 10 + 'px';
+    }
+    
+    function moveright() {
+      const img = document.getElementById('inspo');
+      img.style.left = Number(img.style.left.slice(0, -2)) + 10 + 'px';
+    }
+    
+    function moveup() {
+      const img = document.getElementById('inspo');
+      img.style.top = Number(img.style.top.slice(0, -2)) - 10 + 'px';
+    }
+    
+    function movedown() {
+      const img = document.getElementById('inspo');
+      img.style.top = Number(img.style.top.slice(0, -2)) + 10 + 'px';
+    }
+    
+    
+    function A() {
+      document.getElementById('inspo').style.display = "none";
+    }
+  
+</script>
+</body>
+</html>
